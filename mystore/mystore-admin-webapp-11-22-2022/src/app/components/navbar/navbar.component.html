@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">MyStore</a>
+    <a class="navbar-brand" routerLink="#" routerLinkActive>MyStore</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,44 +15,84 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" routerLink="" routerLinkActive
+            >Dashboard</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="/contactus"
+            routerLinkActive
+            >Contact Us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="/aboutus"
+            routerLinkActive
+            >About Us</a
+          >
         </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
+            routerLink="/products"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            routerLinkActive
           >
             Products
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Create Product</a></li>
-            <li><a class="dropdown-item" href="#">Update Product</a></li>
-            <li><a class="dropdown-item" href="#">View Product</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/products/addproduct"
+                >Create Product</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/products/detailsproduct"
+                >Update Product</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/products/viewproduct"
+                >View Product</a
+              >
+            </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
+            routerLink="/users"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            routerLinkActive
           >
             Users
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Create User</a></li>
-            <li><a class="dropdown-item" href="#">Update User</a></li>
-            <li><a class="dropdown-item" href="#">View User</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/users/adduser"
+                >Create User</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/users/listuser"
+                >Update User</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/users/viewuser"
+                >View User</a
+              >
+            </li>
           </ul>
         </li>
       </ul>
@@ -67,10 +107,22 @@
       </form> -->
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sign In</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="auth/login"
+            routerLinkActive
+            >Sign In</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="auth/register"
+            routerLinkActive
+            >Sign Up</a
+          >
         </li>
       </ul>
     </div>
