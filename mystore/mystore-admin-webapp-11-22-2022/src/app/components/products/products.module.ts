@@ -4,6 +4,10 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { DetailsproductComponent } from './detailsproduct/detailsproduct.component';
 import { ProductsComponent } from './products.component';
+import { ProductsService } from 'src/app/services/products.service';
+import { CategoriesComponent } from './categories/categories.component';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +15,9 @@ import { ProductsComponent } from './products.component';
     AddproductComponent,
     ViewproductComponent,
     DetailsproductComponent,
+    CategoriesComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  providers: [ProductsService],
 })
 export class ProductsModule {}

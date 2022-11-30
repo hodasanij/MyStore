@@ -15,6 +15,8 @@ import { ProductsModule } from './components/products/products.module';
 import { AuthModule } from './components/auth/auth.module';
 import { UsersModule } from './components/users/users.module';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
+import { OrdersService } from './services/orders.service';
 
 @NgModule({
   declarations: [
@@ -35,8 +37,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     ProductsModule,
     AuthModule,
     UsersModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [OrdersService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

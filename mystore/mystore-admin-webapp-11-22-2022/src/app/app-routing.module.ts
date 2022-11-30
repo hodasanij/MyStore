@@ -7,7 +7,9 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { OrdersComponent } from './components/orders/orders.component';
 import { AddproductComponent } from './components/products/addproduct/addproduct.component';
+import { CategoriesComponent } from './components/products/categories/categories.component';
 import { DetailsproductComponent } from './components/products/detailsproduct/detailsproduct.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ViewproductComponent } from './components/products/viewproduct/viewproduct.component';
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'contactus', component: ContactusComponent },
+  { path: 'orders', component: OrdersComponent },
   {
     path: 'users',
     children: [
@@ -38,6 +41,7 @@ const routes: Routes = [
       { path: 'addproduct', component: AddproductComponent },
       { path: 'detailsproduct', component: DetailsproductComponent },
       { path: 'viewproduct', component: ViewproductComponent },
+      { path: 'categories', component: CategoriesComponent },
     ],
   },
   {
