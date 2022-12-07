@@ -1,0 +1,97 @@
+<div class="container-fluid">
+  <div class="row" style="height: inherit">
+    <div
+      class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-start px-5"
+    >
+      Meetrics is a SPA (Single Page Application) constructed by Angular, HTML,
+      and CSS as a Font End
+    </div>
+
+    <div class="col-12 col-sm-6 d-flex flex-column align-items-center mt-5">
+      <div>
+        <h2 class="text-center m-4">Create A Client</h2>
+        <h6 class="text-center m-2">
+          Plese fill in this form to create a client.
+        </h6>
+      </div>
+      <div>
+        <form>
+          <div class="form-group col-12 mt-2">
+            <label for="fullName">Name</label>
+            <input
+              type="userName"
+              class="form-control"
+              id="userName"
+              autocomplete="off"
+              aria-describedby="userName"
+              placeholder="Enter Name"
+              required
+            />
+          </div>
+          <div class="form-group col-12 mt-2">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              autocomplete="off"
+              aria-describedby="email"
+              placeholder="eg: abc@example.com"
+              required
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group col-12 mt-2">
+            <label for="address">Address</label>
+            <input
+              type="userAddress"
+              class="form-control"
+              id="userAddress"
+              autocomplete="off"
+              aria-describedby="userAddress"
+              placeholder="Enter Address"
+              required
+            />
+          </div>
+          <div class="form-group col-12 mt-2">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              autocomplete="off"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="form-group col-12 mt-2">
+            <label for="password">Repeat Password</label>
+            <input
+              type="password"
+              class="form-control"
+              autocomplete="off"
+              id="password"
+              placeholder="Repeat your password"
+              required
+            />
+          </div>
+          <div class="form-group form-check mt-3">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="remember"
+              required
+            />
+            <label class="form-check-label" for="remember">Remember me</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <a routerLink="login" class="">Login Here</a> -->
+            <a class="" routerLink="../login">Sign In</a>
+          </div>
+          <button type="submit" class="btn btn-dark mt-3">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
